@@ -30,8 +30,7 @@ public class ToyShop {
             for (int i = 0; i < 10; i++) {
                 Toys selectedToys = getRandomToys();
                 if (selectedToys != null) {
-                    String result = "Toy " + selectedToys.name + " (ID: " + selectedToys.id
-                            + ")\n";
+                    String result = selectedToys.name + "\n";
                     writer.write(result);
                 }
             }
