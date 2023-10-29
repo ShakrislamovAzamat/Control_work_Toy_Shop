@@ -30,14 +30,15 @@ public class ToyShop {
             for (int i = 0; i < 10; i++) {
                 Toys selectedToys = getRandomToys();
                 if (selectedToys != null) {
-                    String result = "Get " + (i + 1) + ": Toy " + selectedToys.name + " (ID: " + selectedToys.id
+                    String result = "Toy " + selectedToys.name + " (ID: " + selectedToys.id
                             + ")\n";
                     writer.write(result);
                 }
             }
 
             writer.close();
-            System.out.println("Result.txt");
+            System.out.println("Результат записан в файл File.txt!");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
